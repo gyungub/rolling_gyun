@@ -146,8 +146,7 @@ function renderCollection() {
   // 도감 달성률 계산
   const totalCount = characters.length;
   const obtainedCount = Object.keys(collection).length;
-  const percentage = ((obtainedCount / totalCount) * 100).toFixed(1);
-  
+  const percentage = ((Object.keys(collection).length / 100) * 100).toFixed(1);
   listDiv.innerHTML = `
     <p style="margin-bottom: 15px; color: #ffd700;">
       달성률: ${obtainedCount}/${totalCount} (${percentage}%)
