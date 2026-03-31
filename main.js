@@ -72,7 +72,7 @@ function startAutoRoll() {
   
   autoRollInterval = setInterval(() => {
     pull();
-  }, 100); // 0.1초마다 뽑기
+  }, 10000); // 000.1초마다 뽑기
 }
 
 function stopAutoRoll() {
