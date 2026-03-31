@@ -1,5 +1,5 @@
 const characters = [
-  {name:"균균 밈이", grade: "일반", chance: 0.001, color: "#bbb", desc: "평범한 밈 캐릭터", img: "https://i.imgur.com/abcd1234.png"},
+  {name:"균균 밈이", grade: "일반", chance: 0.001, color: "#bbb", desc: "평범한 밈 캐릭터", img: "https://cdn.discordapp.com/attachments/1474720182395207840/1488455930680180747/content.png?ex=69ccd81c&is=69cb869c&hm=591fb3e6ed6d353e3f29ec1f6081c564b186a075e58e113cb793974fa6e4f0d2&"},
   {name:"짱균", grade:"일반", chance:0.001, color:"#bbb", desc:"힘이 센 균균", img: "https://i.imgur.com/abcd1234.png"},
   {name:"귀염균", grade:"일반", chance:0.001, color:"#bbb", desc:"귀여운 균균", img: "https://i.imgur.com/abcd1234.png"},
   {name:"스마일균", grade:"일반", chance:0.001, color:"#bbb", desc:"항상 웃는 균균", img: "https://i.imgur.com/abcd1234.png"},
