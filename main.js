@@ -59,10 +59,13 @@ function pull() {
 
 function displayResult(char) {
   const resultDiv = document.getElementById('result');
+
   resultDiv.innerHTML = `
-    <span class="grade-${char.grade}">
-      【${char.grade}】 ${char.name}
-    </span>
+    <div class="result-card grade-${char.grade}">
+      <img src="${char.img}" class="result-img">
+      <h2>【${char.grade}】 ${char.name}</h2>
+      <p>${char.desc}</p>
+    </div>
   `;
 }
 
@@ -72,7 +75,7 @@ function startAutoRoll() {
   
   autoRollInterval = setInterval(() => {
     pull();
-  }, 10000000000000000000000000000000); // 0.1초마다 뽑기
+  }, 900);
 }
 
 function stopAutoRoll() {
@@ -146,7 +149,7 @@ function renderCollection() {
   // 도감 달성률 계산
   const totalCount = characters.length;
   const obtainedCount = Object.keys(collection).length;
-  const percentage = ((Object.keys(collection).length / 100) * 100).toFixed(1);
+  const percentage = ((obtainedCount / totalCount) * 100).toFixed(1);
   listDiv.innerHTML = `
     <p style="margin-bottom: 15px; color: #ffd700;">
       달성률: ${obtainedCount}/${totalCount} (${percentage}%)
